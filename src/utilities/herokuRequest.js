@@ -1,8 +1,11 @@
+import { addRestaurant } from "../actions/restaurants";
+
 const herokuCitySearch = (city) => {
   const url = "http://opentable.herokuapp.com/api/restaurants?city=" + city;
   return fetch(url)
     .then((res) => res.json())
     .then((json) => {
+      console.log(json);
       return json;
     })
     .catch((err) => {
@@ -10,4 +13,15 @@ const herokuCitySearch = (city) => {
     });
 };
 
-export default herokuCitySearch;
+const herokuCitySearchRemainder = (city, pageCount, dispatch) => {
+  const url = "http://opentable.herokuapp.com/api/restaurants?city=" + city;
+  for (var i = 2; i <= pageCount; i++) {
+    fetch(url + "&page=" + i)
+      .then((res) => res.json())
+      .then((json) => {
+        json.restaurants.map((rest) => dispatch(addRestaurant(rest)));
+      });
+  }
+};
+
+export { herokuCitySearch, herokuCitySearchRemainder };

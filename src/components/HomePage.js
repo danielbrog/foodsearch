@@ -1,12 +1,12 @@
 import React from "react";
 import SearchForm from "./SearchForm";
-import RestaurantList from "./RestaurantList";
+import RestaurantListContainer from "../container/RestaurantListContainer";
 
 const HomePage = () => (
   <div>
     <div className="content">HomePage</div>
     <SearchForm />
-    <RestaurantList />
+    <RestaurantListContainer />
   </div>
 );
 
