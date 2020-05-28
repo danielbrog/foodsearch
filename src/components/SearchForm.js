@@ -31,26 +31,43 @@ const SearchForm = ({ dispatch }) => {
   };
 
   return (
-    <div>
-      <div className="content">Search Restaurants</div>
-      <input
-        type="search"
-        name="Search Cities"
-        placeholder="City"
-        onChange={(e) => setCity(e.target.value)}
-      ></input>
-      <button type="button" onClick={search}>
-        Search Restaurants
-      </button>
-      <input
-        type="search"
-        name="Refine Search"
-        placeholder="Name / Street / Area"
-        onChange={(e) => setRefine(e.target.value)}
-      ></input>
-      <button type="button" onClick={refineSearch}>
-        Refine Search
-      </button>
+    <div className="search__items">
+      <div className="search__city">
+        <label className="search__city__label" htmlFor="city">
+          City:{" "}
+        </label>
+        <input
+          id="city"
+          className="search__city__input"
+          type="search"
+          name="Search Cities"
+          placeholder="City"
+          onChange={(e) => setCity(e.target.value)}
+        ></input>
+        <button className="search__city__button" type="button" onClick={search}>
+          Search Restaurants
+        </button>
+      </div>
+      <div className="search__refine">
+        <label className="search__refine__label" htmlFor="refine">
+          Refine:{" "}
+        </label>
+        <input
+          id="refine"
+          className="search__refine__input"
+          type="search"
+          name="Refine Search"
+          placeholder="Name / Street / Area"
+          onChange={(e) => setRefine(e.target.value)}
+        ></input>
+        <button
+          className="search__refine__button"
+          type="button"
+          onClick={refineSearch}
+        >
+          Refine Search
+        </button>
+      </div>
     </div>
   );
 };

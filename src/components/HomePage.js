@@ -3,7 +3,7 @@ import SearchForm from "./SearchForm";
 import RestaurantList from "./RestaurantList";
 
 const HomePage = () => (
-  <div>
+  <div className="content">
     <div className="main__title">Find Restaurants in your city!</div>
     <SearchForm />
     <RestaurantList />

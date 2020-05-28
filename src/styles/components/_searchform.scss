@@ -1,0 +1,93 @@
+.search__items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $s-size;
+  margin-top: $m-size;
+}
+
+.search__city {
+  margin-bottom: $s-size;
+}
+
+.search__refine {
+  margin-bottom: $s-size;
+}
+
+.search__city__label {
+  display: inline-block;
+  width: $s-width;
+  font-weight: 700;
+}
+
+.search__city__input {
+  margin-right: $s-size;
+  border-radius: $xs-size;
+  padding: $xs-size;
+}
+.search__city__input:hover {
+  border-color: white;
+}
+
+.search__refine__label {
+  display: inline-block;
+  width: $s-width;
+  font-weight: 700;
+}
+
+.search__refine__input {
+  margin-right: $s-size;
+  border-radius: $xs-size;
+  padding: $xs-size;
+}
+
+.search__refine__input:hover {
+  border-color: white;
+}
+
+.search__city__button {
+  width: $l-width;
+  padding: $xs-size;
+  border-radius: $xs-size;
+  border-width: 1px;
+  box-shadow: $xs-size $xs-size $xs-size $dark-blue;
+  background-color: $light-blue;
+}
+
+.search__city__button:hover {
+  background-color: $off-white;
+}
+
+.search__refine__button {
+  width: $l-width;
+  padding: $xs-size;
+  border-radius: $xs-size;
+  border-width: 1px;
+  box-shadow: $xs-size $xs-size $xs-size $dark-blue;
+  background-color: $light-blue;
+}
+
+.search__refine__button:hover {
+  background-color: $off-white;
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .search__city__input {
+    margin-right: $s-size;
+    padding: $s-size;
+  }
+
+  .search__refine__input {
+    margin-right: $s-size;
+    padding: $s-size;
+  }
+
+  .search__city__button {
+    margin-top: $xs-size;
+    padding: $s-size;
+  }
+
+  .search__refine__button {
+    margin-top: $xs-size;
+    padding: $s-size;
+  }
+}

@@ -18,7 +18,12 @@ const RestaurantList = () => {
   return (
     <div className="restaurant__items">
       {filteredRestaurants.map((restaurantID) => {
-        return <RestaurantItem restaurant={restaurants[restaurantID]} />;
+        return (
+          <RestaurantItem
+            key={restaurantID}
+            restaurant={restaurants[restaurantID]}
+          />
+        );
       })}
     </div>
   );
