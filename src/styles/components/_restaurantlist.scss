@@ -2,3 +2,10 @@
   border: 1px solid black;
   width: 100%;
 }
+
+.restaurant__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

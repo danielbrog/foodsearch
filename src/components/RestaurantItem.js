@@ -3,19 +3,19 @@ import React from "react";
 const RestaurantItem = (props) => {
   const { restaurant } = props;
 
+  const price = new Array(restaurant.price);
+  price.fill("$").join("");
+
   return (
-    <React.Fragment>
-      <tr className="restaurant__datarow">
-        <td>
-          <img src={restaurant.image_url} width="25px"></img>
-        </td>
-        <td>{restaurant.name}</td>
-        <td>{restaurant.price}</td>
-        <td>{restaurant.address}</td>
-        <td>{restaurant.area}</td>
-        <td>{restaurant.phone}</td>
-      </tr>
-    </React.Fragment>
+    <div className="restaurant__info">
+      <div className="restaurant__name">
+        <div className="restaurant__price">{price}</div>
+        {restaurant.name}
+      </div>
+      <div className="restaurant__address">{restaurant.address}</div>
+      <div className="restaurant__area">{restaurant.area}</div>
+      <div className="restaurant__phone">{restaurant.phone}</div>
+    </div>
   );
 };
 

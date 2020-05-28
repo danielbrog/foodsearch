@@ -1,3 +1,35 @@
-.restaurant__datarow {
-  border-bottom: 1px lightgrey;
+.restaurant__info {
+  border: 1px solid black;
+  width: $sl-width;
+  display: flex;
+  flex-direction: column;
+  margin: $m-size;
+  padding: $s-size;
+  border-radius: $s-size;
+  box-shadow: $s-size $s-size $xs-size grey;
+}
+
+.restaurant__name {
+  font-size: $l-size;
+}
+
+.restaurant__price {
+  color: green;
+  float: right;
+  font-size: $m-size;
+  font-weight: 700;
+}
+
+.section {
+  margin: $l-size 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .restaurant__info {
+    width: 95%;
+    justify-content: center;
+  }
 }
