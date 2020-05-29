@@ -7,7 +7,10 @@ import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import AppRouter from "../src/routers/AppRouter";
 
-const store = createStore(reducer);
+const store = createStore(
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 //renders root class
 ReactDOM.render(

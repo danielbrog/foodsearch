@@ -16,7 +16,7 @@ const RestaurantList = () => {
   });
 
   return (
-    <div className="restaurant__items">
+    <div role="main" className="restaurant__items">
       {filteredRestaurants.map((restaurantID) => {
         return (
           <RestaurantItem

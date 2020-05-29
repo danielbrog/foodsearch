@@ -31,7 +31,7 @@ const SearchForm = ({ dispatch }) => {
   };
 
   return (
-    <div className="search__items">
+    <div role="form" className="search__items">
       <div className="search__city">
         <label className="search__city__label" htmlFor="city">
           City:{" "}

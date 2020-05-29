@@ -4,7 +4,9 @@ import RestaurantList from "./RestaurantList";
 
 const HomePage = () => (
   <div className="content">
-    <div className="main__title">Find Restaurants in your city!</div>
+    <div role="banner" className="main__title">
+      Find Restaurants in your city!
+    </div>
     <SearchForm />
     <RestaurantList />
   </div>
