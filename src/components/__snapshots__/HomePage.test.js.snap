@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage tests HomePage renders with a title 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="main__title"
+    role="banner"
+  >
+    Find Restaurants in your city!
+  </div>
+  <Memo(Connect(SearchForm)) />
+  <Memo(Connect(RestaurantList)) />
+</div>
+`;

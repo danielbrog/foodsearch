@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders 1`] = `
+<div
+  className="search__items"
+  role="form"
+>
+  <div
+    className="search__city"
+  >
+    <label
+      className="search__city__label"
+      htmlFor="city"
+    >
+      City:
+       
+    </label>
+    <input
+      className="search__city__input"
+      id="city"
+      name="Search Cities"
+      onChange={[Function]}
+      placeholder="City"
+      type="search"
+    />
+    <button
+      className="search__city__button"
+      onClick={[Function]}
+      type="button"
+    >
+      Search Restaurants
+    </button>
+  </div>
+  <div
+    className="search__refine"
+  >
+    <label
+      className="search__refine__label"
+      htmlFor="refine"
+    >
+      Refine:
+       
+    </label>
+    <input
+      className="search__refine__input"
+      id="refine"
+      name="Refine Search"
+      onChange={[Function]}
+      placeholder="Name / Street / Area"
+      type="search"
+    />
+    <button
+      className="search__refine__button"
+      onClick={[Function]}
+      type="button"
+    >
+      Refine Search
+    </button>
+  </div>
+</div>
+`;

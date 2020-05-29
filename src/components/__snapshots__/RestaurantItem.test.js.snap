@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantItem renders 1`] = `
+<div
+  className="restaurant__info"
+>
+  <div
+    className="restaurant__name"
+  >
+    <div
+      className="restaurant__price"
+    >
+      $
+      $
+      $
+      $
+    </div>
+    Scaramouche Restaurant
+  </div>
+  <div
+    className="restaurant__address"
+  >
+    1 Benvenuto Place
+  </div>
+  <div
+    className="restaurant__area"
+  >
+    Toronto / SW Ontario
+  </div>
+  <div
+    className="restaurant__phone"
+  >
+    4169618011
+  </div>
+</div>
+`;
