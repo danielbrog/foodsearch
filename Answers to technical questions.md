@@ -1,4 +1,4 @@
-1. I spent 10 hours on the coding assignment.  If I had more time I would have worked on the UI and CSS such as pagination, as well as adding additional testing.
+1. I spent 10 hours on the coding assignment.  If I had more time I would have worked on the UI and CSS such as pagination, as well as adding additional testing such as a test that mocks the response from the api request.
 
 2. One of the most useful features that was recently added to javascript is nullish coalescing.  One of the frustrating aspects of working with javascript is things like 0 or '' is considered falsey, being able to use a different operator that overcomes this is very useful.
 ```
