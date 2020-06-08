@@ -1,7 +1,11 @@
 # BMO Interview Test
+[![Build Status](https://travis-ci.org/danielbrog/bmotest.svg?branch=master)](https://travis-ci.org/danielbrog/bmotest)
 
-BMO Interview Test to search for restaurants by city. [![Build Status](https://travis-ci.org/danielbrog/bmotest.svg?branch=master)](https://travis-ci.org/danielbrog/bmotest)
+BMO Interview Test to search for restaurants by city. See it live [here.](https://danielbrog.github.io/bmotest/) 
+
 ![Imgur Image](https://i.imgur.com/aLUSHxE.png)
+
+
 
 # About
 Application to allow users to find a restaurant in their area.  It has two input fields, the first one is for the user to find restaurants in a given city, and the second is to refine the search by either name, address, or area.
