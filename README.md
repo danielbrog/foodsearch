@@ -1,5 +1,4 @@
-# BMO Interview Test
-[![Build Status](https://travis-ci.org/danielbrog/bmotest.svg?branch=master)](https://travis-ci.org/danielbrog/bmotest)
+# BMO Interview Test [![Build Status](https://travis-ci.org/danielbrog/bmotest.svg?branch=master)](https://travis-ci.org/danielbrog/bmotest)
 
 BMO Interview Test to search for restaurants by city. See it live [here.](https://danielbrog.github.io/bmotest/) 
 
