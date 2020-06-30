@@ -11,6 +11,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITSECRET
-  local_dir: /home/travis/build/danielbrog/foodtest/public
+  local_dir: /home/travis/build/danielbrog/foodsearch/public
   on:
     branch: master
